@@ -1,0 +1,62 @@
+﻿@model BE.U2_W3_D5.PS_PIZZERIA.Models.PIZZA
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>ELIMINA PIZZA</h2>
+
+<div class="container-fluid" id="bgMenu">
+
+    <div class="container" id="areaRiservata">
+
+        <div>
+            <h3>Sei sicuro di voler eliminare questa pizza?</h3>
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.NomePizza)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NomePizza)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Ingredienti)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Ingredienti)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Prezzo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Prezzo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Foto)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Foto)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Elimina" class="btn btn-default" id="salva" /> |
+                    @Html.ActionLink("Annulla", "Index")
+                </div>
+            }
+        </div>
+    </div>
+</div>

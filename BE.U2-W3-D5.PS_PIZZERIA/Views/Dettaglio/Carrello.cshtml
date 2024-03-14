@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BE.U2_W3_D5.PS_PIZZERIA.Models.DETTAGLIO>
+
+@{
+    ViewBag.Title = "Carrello";
+}
+
+<h2>CARRELLO</h2>
+
+<div class="container-fluid" id="bgMenu">
+
+    <div class="container" id="areaRiservata">
+
+        @*<p>
+            @Html.ActionLink("Create New", "Create")
+        </p>*@
+        <table class="table">
+            <tr>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.PIZZA.NomePizza)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantita)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PrezzoTotale)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td class="fade-in-right">
+                        @Html.DisplayFor(modelItem => item.PIZZA.NomePizza)
+                    </td>
+                    <td class="fade-in-right">
+                        @Html.DisplayFor(modelItem => item.Quantita)
+                    </td>
+                    <td class="fade-in-right">
+                        @Html.DisplayFor(modelItem => item.PrezzoTotale)
+                    </td>
+                    <td class="fade-in-right">
+                        @Html.ActionLink("Modifica", "Edit", new { id = item.IdDettaglio }) |
+
+                        @Html.ActionLink("Elimina", "Delete", new { id = item.IdDettaglio })
+                    </td>
+                </tr>
+
+
+            }
+
+        </table>
+            <btn class="btn btn-default" id="salva"> <a href="/Ordine/Create">CONFERMA ORDINE</a></btn>
+
+    </div>
+</div>

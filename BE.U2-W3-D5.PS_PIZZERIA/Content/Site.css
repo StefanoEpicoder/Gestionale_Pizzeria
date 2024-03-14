@@ -1,0 +1,256 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    background-image: url('img/sfdn.jpg');
+    background-color: rgba(0,0,0,0.5);
+    /*background-image: url('img/sfondo.jpg');*/
+    /*background-image: url('img/menù-pizzeria_bianco-e-nero.jpeg');*/
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+}
+
+.body-content {
+    margin:10px;
+    width: 100%;
+    /*height: 100%;*/
+    border-radius: 15px;
+    /*position:relative;*/
+}
+
+li a {
+    text-decoration: none;
+    margin: 10px;
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:white;
+}
+
+
+p {
+    padding:5px;
+    /*background-color: rgba(0,0,0,0.9);*/
+}
+
+h2, .h2 {
+    /*border-radius: 442px 442px 0px 0px;*/
+    margin-bottom: 0;
+    color: yellow;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000c7;
+}
+
+
+
+li {
+    /*background-color: currentColor;*/
+    padding: 11px;
+    margin: -12px;
+    font-family: 'PT Sans', sans-serif;
+    /*border: 1px solid orangered;*/
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+    li:hover {
+        font-size: 20px;
+        padding: 11px;
+        /*border: 1px solid orangered;*/
+        color: white;
+    }
+
+.contflex {
+    text-align: -webkit-center;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*border-radius: 329px 329px 70px 70px;*/
+    background-color: rgb(0 0 0 / 76%);
+    padding: 10px;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+    
+}
+
+/*footer {
+    text-align: center;
+    background-color: rgb(0 0 0 / 79%);
+    color: white;
+    padding: 10px;
+    left: 0;
+    right: 0;*/
+    /*position:sticky;*/
+       /*position: absolute;*/
+    /*bottom: 0;*/
+/*}*/
+
+.fto {
+    background-color: rgb(0 0 0 / 79%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*.main {
+    height: 100%;
+    min-height: 100vh;
+}*/
+
+input {
+    border-radius: 6px;
+    width: 70px;
+}
+
+
+dt {
+    color: gold;
+}
+
+dd {
+    color: floralwhite;
+}
+
+.dl-horizontal{
+    padding:30px;
+}
+
+.dettagliPiz{
+    display:flex;
+}
+
+th, td {
+    color: white;
+}
+
+#btnAccedi{
+    color:white;
+}
+
+label{
+    color:white;
+}
+.form-group{
+    padding:20px;
+}
+
+.flexCard {
+    padding:40px;
+    /*background-color: #000000c9;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom:20px;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius:10px;
+}
+
+img, svg {
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.card {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.0);
+    border: 1px solid black;
+    background-color: darkgoldenrod; /* Aggiunto sfondo bianco */
+}
+
+#bgMenu {
+    /*height:100vh;*/
+    padding: 70px;
+    background-color: #000000c9;
+}
+
+.card-text {
+    text-align: center;
+    color: black;
+}
+
+.card-body{
+    text-align:center;
+}
+
+#contBtn {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.btn-primary {
+    margin: 2px;
+    width: 70px;
+    --bs-btn-hover-bg: #000000;
+    --bs-btn-border-color: white;
+    --bs-btn-active-border-color: #ffffff;
+    --bs-btn-bg: #000000;
+    text-align: center;
+}
+
+   h3{
+       color:white;
+       font-size: large;
+       padding:10px
+   }
+
+ h5{
+    color:black;
+    font-size:medium;
+}
+
+#areaRiservata {
+    padding:10px;
+    /*background-color: rgba(0,0,0,0.9);*/
+}
+
+#salva {
+    color: darkred;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+/* ANIMAZIONI*/
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInRight 1s ease-in-out forwards;
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 6;
+        transform: translateY(0);
+    }
+}
