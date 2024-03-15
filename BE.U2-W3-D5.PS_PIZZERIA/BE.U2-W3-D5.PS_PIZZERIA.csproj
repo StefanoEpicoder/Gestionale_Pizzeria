@@ -133,6 +133,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuPizzaController.cs" />
     <Compile Include="Controllers\OrdineController.cs" />
+    <Compile Include="Controllers\QueriesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +240,8 @@
     <Content Include="Views\Dettaglio\Carrello.cshtml" />
     <Content Include="Views\Dettaglio\Edit.cshtml" />
     <Content Include="Views\Ordine\OrdineConfermato.cshtml" />
+    <Content Include="Views\Queries\QueriesPage.cshtml" />
+    <Content Include="Views\Queries\GetEvaso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
